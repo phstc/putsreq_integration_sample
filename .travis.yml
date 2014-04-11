@@ -1,0 +1,11 @@
+script:
+  - 'bundle exec rspec'
+
+env:
+  - WEBSITE_URL='https://putsreq-integration-sample.herokuapp.com'
+
+branches:
+  only:
+    - master
+rvm:
+  - 2.0.0
