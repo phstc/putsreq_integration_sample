@@ -7,11 +7,16 @@ describe 'Sends new users to the "API"', type: :feature do
     name = Faker::Name.name
     session.fill_in 'user_name', with: name
     session.click_button 'Create User'
+    # response builder on PutsReq
+    # response.status = 200;
+    # response.headers['Content-Type'] = 'application/json';
+    # var user = JSON.parse(request.body)['user'];
+    # response.body = { message: 'Hello World ' + user['name'] };
 
     # test the view
     expect(session).to have_content "Hello World #{name}"
 
-    response = HTTParty.get('http://putsreq.com/5352b1c8894deaf810000026/last')
+    response = HTTParty.get('http://putsreq.com/zkmR5wLyJxazejKtDmca/last')
 
     payload = JSON.parse(response['body'])
 

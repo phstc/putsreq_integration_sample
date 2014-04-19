@@ -10,15 +10,15 @@ class PutsReqApp < Sinatra::Base
   end
 
   post '/' do
-    @name = params[:user_name]
-
     # config = YAML::load_file(File.join(__dir__, 'config.yml'))
     # url = config[MY_APPLICATION_ENV][create_user_url]
-    url = 'http://putsreq.com/5352b1c8894deaf810000026'
+    url = 'http://putsreq.com/zkmR5wLyJxazejKtDmca'
 
-    HTTParty.post(url,
-                  body: { user: { name: @name } }.to_json,
-                  headers: { 'Content-Type' => 'application/json' })
+    response = HTTParty.post(url,
+                             body: { user: { name: params[:user_name] } }.to_json,
+                             headers: { 'Content-Type' => 'application/json' })
+
+    @message = response['message']
 
     erb :show
   end
@@ -45,4 +45,4 @@ __END__
 </form>
 
 @@ show
-Hello World <%= @name %>!
+<%= @message %>

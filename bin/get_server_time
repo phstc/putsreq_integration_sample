@@ -7,7 +7,7 @@ require 'httparty'
 
 # config = YAML::load_file(File.join(__dir__, 'config.yml'))
 # url = config[MY_APPLICATION_ENV][get_server_time]
-url = 'http://putsreq.com/5352c213334bba1eaa000017'
+url = 'http://putsreq.com/cAHupZ9LG5B0rXrbPs0X'
 
 response = HTTParty.get(url)
 
