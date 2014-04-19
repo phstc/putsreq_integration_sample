@@ -1,5 +1,7 @@
 Sample Integration Test Project using [PutsReq](https://putsreq.com).
 
+[![Build Status](https://travis-ci.org/phstc/putsreq_integration_sample.svg)](https://travis-ci.org/phstc/putsreq_integration_sample)
+
 ### Tests
 
 Check [spec/acceptance](https://github.com/phstc/putsreq_integration_sample/tree/master/spec/acceptance) to see the tests samples.
