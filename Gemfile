@@ -2,6 +2,7 @@ source 'https://rubygems.org'
 
 gem 'sinatra'
 gem 'httparty'
+gem 'rake'
 
 group :development, :test do
   gem 'faker'
