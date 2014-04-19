@@ -11,7 +11,7 @@ describe 'Sends new users to the "API"', type: :feature do
     # test the view
     expect(session).to have_content "Hello World #{name}"
 
-    response = HTTParty.get('https://putsreq.herokuapp.com/5352b1c8894deaf810000026/last')
+    response = HTTParty.get('http://putsreq.com/5352b1c8894deaf810000026/last')
 
     payload = JSON.parse(response['body'])
 

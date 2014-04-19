@@ -14,7 +14,7 @@ class PutsReqApp < Sinatra::Base
 
     # config = YAML::load_file(File.join(__dir__, 'config.yml'))
     # url = config[MY_APPLICATION_ENV][create_user_url]
-    url = 'https://putsreq.herokuapp.com/5352b1c8894deaf810000026'
+    url = 'http://putsreq.com/5352b1c8894deaf810000026'
 
     HTTParty.post(url,
                   body: { user: { name: @name } }.to_json,
