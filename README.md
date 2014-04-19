@@ -30,20 +30,3 @@ end
 
 after 'deploy', 'travis:build'
 ```
-
-#### .travis.yml
-
-```yaml
-script:
-  - 'bundle exec rspec'
-
-env:
-  - WEBSITE_URL='https://production.example.com'
-  - WEBSITE_URL='https://staging.example.com'
-
-branches:
-  only:
-    - master
-rvm:
-  - 2.0.0
-```
