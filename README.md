@@ -1,6 +1,9 @@
+[![Build Status](https://travis-ci.org/phstc/putsreq_integration_sample.svg)](https://travis-ci.org/phstc/putsreq_integration_sample)
+
+## PutsReq sample project
+
 Sample Integration Test Project using [PutsReq](http://putsreq.com).
 
-[![Build Status](https://travis-ci.org/phstc/putsreq_integration_sample.svg)](https://travis-ci.org/phstc/putsreq_integration_sample)
 
 ### Tests
 
